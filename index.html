@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Traversy 12/15</title>
+	</head>
+	<a href="blog.html">Go to blog</a>
+	<hr>
+	<body>
+		<!-- Comment Tags -->
+		<h1>Heading One</h1>
+		<h2>Heading Two</h2>
+		<h3>Heading Three</h3>
+		<h4>Heading Four</h4>
+		<h5>Heading Five</h5>
+		<h6>Heading Six</h6>
+
+		<!-- Paragraph tags -->
+		<p>
+			Lorem ipsum dolor sit amet, <a href = "http://google.com" target="_blank" >consectetur adipisicing eli</a>, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud <strong> exercitation ullamco laboris nisi ut aliquip ex ea commodo </strong>
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum <em>dolore eu fugiat nulla</em> pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<!-- Inline elementes do not start a new line and take only the necessary width -->
+			<!-- strong means bold -->
+			<!-- em means italcis -->
+			<!-- a tags are hyperlinks. adding the target feature launches the website in a new tab -->
+		<!-- Block elements start on a new line and take full width avail -->
+
+		<!-- Lists // ul is Un-numbered, ol is ordered/numbered -->
+		<ul>
+			<li> List Item 1</li>
+			<li> List Item 2</li>
+			<li> List Item 3</li>
+			<li> List Item 4</li>
+		</ul>
+
+		<ol>
+			<li> List Item 1</li>
+			<li> List Item 2</li>
+			<li> List Item 3</li>
+			<li> List Item 4 </li>
+		</ol>
+
+		<!-- Table -->
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+			<tbody>
+				<tr>
+					<td>Stuart Darsey</td> <!-- td is to enter data, tr is the tag for the row -->
+					<td>stuart@here.com</td>
+					<td>30</td>
+				</tr>
+			</tbody>
+			</thead>
+		</table>
+		<br>
+		<hr>
+
+		<!-- Forms -->
+		<form  action="process.php" method="POST">
+			<label>First Name</label>
+			<input type="text" name="firstName">
+			<label>Last Name</label>
+			<input type="text" name="firstName">
+
+		<!-- label and inputs are both inline so that is why they are on the same line. -->
+
+		<br>
+		<br>
+		<!-- adding div here because it's a block element and creates a new line -->
+		<div>
+			<label>First Name</label>
+			<input type="text" name="firstName" placeholder="Enter first name">
+		</div>
+		<br>
+		<div>
+			<label>Last Name</label>
+			<input type="text" name="lastName" placeholder="Enter last name">
+		</div>
+		<br>
+		<div>
+			<label>Email</label>
+			<input type="email" name="email" placeholder="Enter email">
+			<!-- changing the type here to email prevents the user from entering a non email in the field -->
+		</div>
+		<br>
+		<div>
+			<label>Message</label>
+			<textarea name= message></textarea>
+		</div>
+		<br>
+		<div>
+			<label>Gender</label>
+			<select name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label>Age</label>
+			<input type="number" name="age" value="69">
+		</div>
+		<br>
+		<div>
+			<label>Birthday</label>
+			<input type="date" name="Birthday">
+		</div>
+		<br>
+		<input type="submit" name="submit" value="Submit">
+<!-- notice if you press submit, it goes to process.php which is listed in the action and method POST line -->
+
+		<br>
+
+		<!-- Image -->
+		<img src="images/phishnye.jpg" alt="Trey_stuck" width="400">
+		</form>
+	</body>
+</html>
